@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  jira-bulk-updater:
+    build: .
+    container_name: jira_bulk_updater_app
+    ports:
+      - "8501:8501"
+    restart: always
